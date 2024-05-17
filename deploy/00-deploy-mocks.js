@@ -1,8 +1,7 @@
 const { network, ethers } = require("hardhat")
 const { developmentChains } = require("../helper-hardhat-config")
 
-// const BASE_FEE = ethers.utils.parseEther("0.25") //保底费用，每次请求花费0.25LINK
-const BASE_FEE = ethers.parseEther("0.25") //保底费用，每次请求花费0.25LINK
+const BASE_FEE = ethers.utils.parseEther("0.25") //保底费用，每次请求花费0.25LINK
 const GAS_PRICE_LINK = 1e9 // link per gas // 这是一个计算值，基于所在链gas价格的计算值
 
 module.exports = async function ({ getNamedAccounts, deployments }) {
